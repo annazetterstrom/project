@@ -6,7 +6,6 @@ body{
 }
 
 .container {
-    
     color: black;
 }
 
@@ -36,18 +35,24 @@ nav a:hover{
 
 }
 .div5 {
-    position: sticky; /* vi kanske borde börja med position fixed och ha en support query för sticky (IE) */
+    position: fixed; /* vi kanske borde börja med position fixed och ha en support query för sticky (IE) */
     top: 100px;
-    float: right;
+    right: 100px;
     background-color: #ffffff; 
 }
 .div1{
-    margin-top: 30px;
-    margin-left: 10px; 
+    /*margin-top: 30px;
+    margin-left: 10px;  */
+    margin: auto;
+    width: 235px;
+}
+.div2{
+    
 }
 
 .div3{
-    margin-left: 10px; 
+    margin-left: 10px;
+     
 }
 footer {
     text-align: center;
@@ -56,5 +61,45 @@ footer {
 a {
     text-decoration: none;
 }
+
+@media (min-width: 800px){
+   /* body{
+        background-color: red; 
+    } */
+    .container{
+        width: 800px;
+        margin: 0 200px 0 0;
+    }
+    .left{
+        float: left;
+        width: 150px; 
+        margin-right: 20px;
+        height: inherit; 
+    }
+    .right{
+        float: right; 
+        width: 620px; 
+        background-color: purple; 
+  
+    }
+    .div3 a{
+        display: block; 
+        margin: 5px;
+    }
+    
+    .clearfix{
+        clear: both;
+    }
+    .div1, .div2{
+        width: 500px; 
+        margin: auto;
+        margin-top: 10px;
+    }
+
+
+
+} /* media */
+
+
 
 
