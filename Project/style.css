@@ -1,5 +1,5 @@
 
-body {}
+
 
 * {
     box-sizing: border-box;
@@ -29,15 +29,6 @@ nav a{
 nav a:hover{
     border: 1px solid blue; 
 }
-
-.div1 {}
-
-.div2 {}
-
-.div3 {}
-
-.div4 {}
-
 .div5 {
     position: sticky;
     top: 100px;
