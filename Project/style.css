@@ -30,7 +30,7 @@ nav a:hover{
     border: 1px solid blue; 
 }
 .div5 {
-    position: sticky;
+    position: sticky; /* vi kanske borde börja med position fixed och ha en support query för sticky (IE) */
     top: 100px;
     float: right;
 
