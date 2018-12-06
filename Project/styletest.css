@@ -60,7 +60,7 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 800px){  
+@media (min-width: 800px){
     main {
         float: right;
         width: 600px;
@@ -76,5 +76,37 @@ footer {
     }
     .contentimg {
         float: right;
+    }
+
+    @supports (display: grid){
+        main, aside {
+            clear: both;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 200px auto;
+            grid-template-areas: 
+            "header header"
+            "infolinks main"
+            "news main";
+            
+            
+        }
+        header {
+            grid-area: header;
+            background-color: #f00;
+        }
+        main {
+            grid-area: main;
+            background-color: #fa0;
+        }
+        aside.infolinks {
+            grid-area: infolinks;
+            background-color: #ff0;
+        }
+        aside.news {
+            grid-area: news;
+            background-color: blue;
+        }
     }
 }
