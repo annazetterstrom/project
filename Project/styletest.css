@@ -15,7 +15,7 @@
  }
  .toplink {
     position: fixed;
-    right: 100px;
+    right: 0px;
     bottom: 100px;
     background-color: #ffffff;
     padding: 5px;
@@ -76,6 +76,10 @@
     background-color: hotpink;
     color: #ffffff;
  }
+
+ a.emoji-links{
+     margin-left: 10px;
+ }
  
  @media (min-width: 800px){
     main {
@@ -125,6 +129,7 @@
             grid-area: header;
             background-color: #f00;
             padding: 5px;
+            text-align: center;
         }
         main {
             width: 100%;
