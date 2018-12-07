@@ -5,6 +5,9 @@
 body {
    margin: 0;
 }
+main, aside, .news-or{
+   padding: 10px;
+}
 
 .clearfix {
    clear: both;
@@ -12,13 +15,13 @@ body {
 
 .toplink  {
    position: fixed;
-   right: 100px;
-   bottom: 100px;
+   right: 0px;
+   bottom: 25px;
    background-color: #99c;
    color: white;
    padding: 5px;
    border-radius: 5px;
-   width: 70px;
+   width: 170px;
 }
 
 .toplink a  {
@@ -29,7 +32,7 @@ body {
 
 nav a {
    color:floralwhite;
-   font-size: 2 1em;
+   font-size: 1em;
    padding: 10px;
 
 }
@@ -75,11 +78,12 @@ h6 {
 footer {
    text-align: center;
    margin-top: 50px;
+   margin-bottom: 50px;
    font-family: 'Courier New', Courier, monospace;
 }
 
 .form {
-   border: 1px solid darkblue;
+   border: 1px solid #99c;
    border-radius: 5px;
    padding: 5px;
    margin: 10px auto;
@@ -92,15 +96,24 @@ footer {
 }
 
 button.form-media:hover {
-   background-color: hotpink;
+   background-color: #99c;
    color: #ffffff;
 }
 
 a.emoji-links {
    margin-left: 10px;
 }
+iframe{
+   width: 90%;
+   height: 200px;
+}
 
-
+@media(min-width:550px){
+   iframe{
+      width: 100%;
+      height: 300px;
+   }
+}
 @media (min-width: 800px) { /*Desktop, om det är större än 800 px*/
    main {
       float: right;
@@ -109,6 +122,12 @@ a.emoji-links {
    }
    body{
       background-color: darkgrey;
+   }
+
+   .toplink  {
+      right: 10px;
+      bottom: 25px;
+      width: 100px;
    }
 
    aside {
@@ -146,6 +165,12 @@ a.emoji-links {
       width: 50%;
       height: auto;
    }
+
+   iframe{
+      width: 500px;
+      height: 280px;
+   }
+   
 
    @supports (display: grid) {
 
