@@ -184,11 +184,11 @@ iframe{
          display: grid;
          width: 80%;
          padding: 5px; 
-         grid-template-columns: 200px auto;
+         grid-template-columns: auto 200px;
          grid-template-areas:
             "header header"
-            "infolinks main"
-            "news main";
+            " main infolinks"
+            " main news";
 
 
       }
@@ -215,14 +215,14 @@ iframe{
          grid-area: infolinks;
          background-color:floralwhite;
          padding: 5px;
-         border-right: 1px solid #99c;
+         border-left: 5px ridge #99c;
       }
 
       aside.news {
          width: 100%;
          grid-area: news;
          background-color:floralwhite;
-         border-right: 1px solid #99c;
+         border-left: 5px ridge #99c;
          padding: 5px;
       }
 
@@ -231,10 +231,11 @@ iframe{
          grid-row: 2/4;
          /*grid-area:news; */
          background-color: floralwhite;
-         border-right: 1px solid #99c;
+         border-left: 5px ridge #99c;
          padding: 5px;
       }
    }
 }
+/*TODO: fixa floaten   */
 
 /*Vi tog bort aside news i hem och kontakt i html och skapa en ny klass för news och tilldela en annan storlek, grid-row 2/4*/
