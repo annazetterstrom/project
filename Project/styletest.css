@@ -7,7 +7,10 @@
 body {
    margin: 0;
 }
-main, aside, .news-or{
+
+main,
+aside,
+.news-or {
    padding: 10px;
 }
 
@@ -15,45 +18,48 @@ main, aside, .news-or{
    clear: both;
 }
 
-.toplink  {
+.toplink {
    position: fixed;
    right: 0px;
    bottom: 25px;
-   background-color: #99c;
-   color: white; 
+   background-color: rgb(7, 56, 129);
+   color: white;
    padding: 5px;
    border-radius: 5px;
    width: 170px;
 }
 
-.toplink a  {
+.toplink a {
    color: white;
-  
+
 }
 
-header{
+header {
    text-align: center;
-}   /*La till i mobil för att centerar rukbrik*/
+}
+
+/*La till i mobil för att centerar rukbrik*/
 
 
 nav a {
-   color:floralwhite;
+   color: floralwhite;
    font-size: 1em;
    padding: 12px 18px 12px 1px;
 
 }
 
-nav a:hover, .active {
+nav a:hover,
+.active {
    background-color: #f9f9f9;
    color: #000000;
-  
-   
-}
-nav{
-   background-color: rgb(7, 56, 129);   /*#99c för ljus lila*/
-   padding: 10px;
-   margin-bottom: -1px;
 
+
+}
+
+nav {
+   background-color: rgb(7, 56, 129);
+   padding: 10px;
+   /*margin-bottom: -1px;*/
 
 }
 
@@ -75,12 +81,8 @@ p {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6
-ul  {
-   font-family: 'Times New Roman', Times, serif;
+h3 {
+   font-family: 'EB Garamond', serif;
 }
 
 footer {
@@ -111,49 +113,60 @@ button.form-media:hover {
 a.emoji-links {
    margin-left: 10px;
 }
-iframe{
+
+iframe {
    width: 90%;
    height: 200px;
 }
 
-@media(min-width:550px){
-   iframe{
+.content_first_char {
+   font-size: 25pt;
+   font-weight: bold;
+}
+
+@media(min-width:550px) {
+   iframe {
       width: 100%;
       height: 300px;
    }
 }
-@media (min-width: 800px) { /*Brytpunkt som är 800px eller större är för desktop, laptop osv. Allt under 800px är för plattor och mobiler */
+
+@media (min-width: 800px) {
+
+   /*Brytpunkt som är 800px eller större är för desktop, laptop osv. Allt under 800px är för plattor och mobiler */
    main {
-      float: right;
+      float: left;
       width: 600px;
       padding: 5px;
    }
-   body{
+
+   body {
       background-color: #f9f9f9;
    }
 
-   .toplink  {
+   .toplink {
       right: 10px;
       bottom: 25px;
       width: 100px;
    }
 
    nav a {
-      color:white;
+      color: white;
       font-size: 1em;
       padding: 10px;
-   
+
    }
 
-   nav a:hover, .active {
+   nav a:hover,
+   .active {
       background-color: #f9f9f9;
       color: #000000;
-      
+
    }
-   
+
 
    aside {
-      float: left;
+      float: right;
       width: 200px;
       padding: 5px;
    }
@@ -163,7 +176,7 @@ iframe{
       margin-right: auto;
       margin-left: auto;
       margin-top: 0;
-      padding: 5px; 
+      padding: 5px;
    }
 
    .contentimg {
@@ -172,11 +185,14 @@ iframe{
    }
 
    header img {
-      float: left;
-      padding-left: 50px; /*För att få loggan i vänstra hörnet*/
+      float: top;
+      /*padding-left: 50px;*/
+      width: 100%
+                           /*För att få loggan i vänstra hörnet*/
+   } 
 
-   }
-   header{
+
+   header {
       margin-bottom: 0;
       padding-bottom: 0;
       padding-left: 20px;
@@ -188,12 +204,12 @@ iframe{
       height: auto;
    }
 
-   iframe{
+   iframe {
       width: 500px;
       height: 280px;
    }
 
-   
+
 
    @supports (display: grid) {
 
@@ -206,7 +222,7 @@ iframe{
       .container {
          display: grid;
          width: 80%;
-         padding: 5px; 
+         padding: 5px;
          grid-template-columns: auto 200px;
          grid-template-areas:
             "header header"
@@ -219,8 +235,8 @@ iframe{
       header {
          width: 100%;
          grid-area: header;
-         background-color:#f9f9f9;
-         padding: 0px;  
+         background-color: #f9f9f9;
+         padding: 0px;
          text-align: center;
          padding-bottom: 0;
          margin-bottom: 0;
@@ -236,10 +252,10 @@ iframe{
       aside.infolinks {
          width: 100%;
          grid-area: infolinks;
-         background-color:#f9f9f9;
+         background-color: #f9f9f9;
          padding: 5px;
          border-left: 5px ridge #99c;
-      } 
+      }
 
       /*aside.news {
          width: 100%;
@@ -256,9 +272,11 @@ iframe{
          background-color: #f9f9f9;
          border-left: 5px ridge rgb(7, 56, 129);
          padding: 5px;
+         margin-top: -1;
       }
    }
 }
-/*TODO: fixa floaten   */
 
-/*Vi tog bort aside news i hem och kontakt i html och skapa en ny klass för news och tilldela en annan storlek, grid-row 2/4*/
+   /*TODO: fixa floaten   */
+
+   /*Vi tog bort aside news i hem och kontakt i html och skapa en ny klass för news och tilldela en annan storlek, grid-row 2/4*/
