@@ -1,3 +1,5 @@
+/* Generella regler för både mobil och desktop. Om jag vill göra speciella saker från*/
+
 * {
    box-sizing: border-box;
 }
@@ -18,7 +20,7 @@ main, aside, .news-or{
    right: 0px;
    bottom: 25px;
    background-color: #99c;
-   color: white;
+   color: white; 
    padding: 5px;
    border-radius: 5px;
    width: 170px;
@@ -29,24 +31,29 @@ main, aside, .news-or{
   
 }
 
+header{
+   text-align: center;
+}   /*La till i mobil för att centerar rukbrik*/
+
 
 nav a {
    color:floralwhite;
    font-size: 1em;
-   padding: 10px;
+   padding: 12px 18px 12px 1px;
 
 }
 
 nav a:hover, .active {
-   background-color: floralwhite;
+   background-color: #f9f9f9;
    color: #000000;
   
    
 }
 nav{
-   background-color: #99c;
+   background-color: rgb(7, 56, 129);   /*#99c för ljus lila*/
    padding: 10px;
    margin-bottom: -1px;
+
 
 }
 
@@ -71,7 +78,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6
+ul  {
    font-family: 'Times New Roman', Times, serif;
 }
 
@@ -83,7 +91,7 @@ footer {
 }
 
 .form {
-   border: 1px solid #99c;
+   border: 1px solid rgb(7, 56, 129);
    border-radius: 5px;
    padding: 5px;
    margin: 10px auto;
@@ -96,7 +104,7 @@ footer {
 }
 
 button.form-media:hover {
-   background-color: #99c;
+   background-color: #f9f9f9;
    color: #ffffff;
 }
 
@@ -114,14 +122,14 @@ iframe{
       height: 300px;
    }
 }
-@media (min-width: 800px) { /*Desktop, om det är större än 800 px*/
+@media (min-width: 800px) { /*Brytpunkt som är 800px eller större är för desktop, laptop osv. Allt under 800px är för plattor och mobiler */
    main {
       float: right;
       width: 600px;
       padding: 5px;
    }
    body{
-      background-color: darkgrey;
+      background-color: #f9f9f9;
    }
 
    .toplink  {
@@ -129,6 +137,20 @@ iframe{
       bottom: 25px;
       width: 100px;
    }
+
+   nav a {
+      color:white;
+      font-size: 1em;
+      padding: 10px;
+   
+   }
+
+   nav a:hover, .active {
+      background-color: #f9f9f9;
+      color: #000000;
+      
+   }
+   
 
    aside {
       float: left;
@@ -170,6 +192,7 @@ iframe{
       width: 500px;
       height: 280px;
    }
+
    
 
    @supports (display: grid) {
@@ -196,8 +219,8 @@ iframe{
       header {
          width: 100%;
          grid-area: header;
-         background-color: darkgrey;
-         padding: 5px;
+         background-color:#f9f9f9;
+         padding: 0px;  
          text-align: center;
          padding-bottom: 0;
          margin-bottom: 0;
@@ -206,32 +229,32 @@ iframe{
       main {
          width: 100%;
          grid-area: main;
-         background-color: floralwhite;
+         background-color: #f9f9f9;
          padding: 5px;
       }
 
       aside.infolinks {
          width: 100%;
          grid-area: infolinks;
-         background-color:floralwhite;
+         background-color:#f9f9f9;
          padding: 5px;
          border-left: 5px ridge #99c;
-      }
+      } 
 
-      aside.news {
+      /*aside.news {
          width: 100%;
          grid-area: news;
-         background-color:floralwhite;
+         background-color:#f9f9f9;
          border-left: 5px ridge #99c;
          padding: 5px;
-      }
+      }*/
 
       .news-or {
          width: 100%;
          grid-row: 2/4;
          /*grid-area:news; */
-         background-color: floralwhite;
-         border-left: 5px ridge #99c;
+         background-color: #f9f9f9;
+         border-left: 5px ridge rgb(7, 56, 129);
          padding: 5px;
       }
    }
