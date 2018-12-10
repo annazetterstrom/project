@@ -59,7 +59,7 @@ nav a:hover,
 nav {
    background-color: rgb(7, 56, 129);
    padding: 10px;
-   /*margin-bottom: -1px;*/
+   margin-bottom: -1px;
 
 }
 
@@ -104,7 +104,7 @@ footer {
 
 button.form-media:hover {
    background-color: #f9f9f9;
-   color: #ffffff;
+   color: #000;
 }
 
 a.emoji-links {
@@ -116,10 +116,6 @@ iframe {
    height: 200px;
 }
 
-.content_first_char {
-   font-size: 25pt;
-   font-weight: bold;
-}
 
 /* burgercode start */
 #burger{
@@ -144,6 +140,11 @@ iframe {
 }
 /* burgercode end */
 
+main>p:first-of-type::first-letter {
+   font-size: 200%;
+   font-weight: bold;
+}
+
 @media(min-width:550px) {
    iframe {
       width: 100%;
@@ -151,7 +152,7 @@ iframe {
    }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 810px) {
 
    /*Brytpunkt som är 800px eller större är för desktop, laptop osv. Allt under 800px är för plattor och mobiler */
    main {
@@ -204,7 +205,7 @@ iframe {
    }
 
    .container {
-      width: 802px;
+      width: 810px;
       margin-right: auto;
       margin-left: auto;
       margin-top: 0;
@@ -240,8 +241,6 @@ iframe {
       width: 500px;
       height: 280px;
    }
-
-
 
    @supports (display: grid) {
 
@@ -307,6 +306,8 @@ iframe {
          margin-top: -1;
       }
    }
+
+   
 }
 
    /*TODO: fixa floaten   */
