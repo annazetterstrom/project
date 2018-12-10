@@ -67,9 +67,6 @@ a {
    text-decoration: none;
 }
 
-nav.pagelinks {
-   margin-top: 10px;
-}
 
 .infolinks nav a {
    display: block;
@@ -124,6 +121,29 @@ iframe {
    font-weight: bold;
 }
 
+/* burgercode start */
+#burger{
+   display: none;
+}
+#burgerlabel {
+   display: block;
+   font-size: 32px;
+   text-align: left;
+   background-color: rgb(7, 56, 129);
+   color: #fff;
+}
+.menu {
+   display: none;
+}
+#burger:checked + .menu {
+   display: block;
+   position: absolute;
+}
+.menu a {
+   display: block;
+}
+/* burgercode end */
+
 @media(min-width:550px) {
    iframe {
       width: 100%;
@@ -139,6 +159,18 @@ iframe {
       width: 600px;
       padding: 5px;
    }
+
+   /* burgercode start */
+   #burgerlabel{
+      display: none;
+   }
+   .menu {
+      display: block;
+   }
+   .menu a {
+      display: inline;
+   }
+   /* burgercode end */
 
    body {
       background-color: #f9f9f9;
