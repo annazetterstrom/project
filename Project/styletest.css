@@ -6,6 +6,7 @@
 
 body {
    margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 main,
@@ -60,6 +61,7 @@ nav {
    background-color: rgb(7, 56, 129);
    padding: 10px;
    margin-bottom: -1px;
+   border-radius: 10px;
 
 }
 
@@ -72,9 +74,6 @@ a {
    display: block;
 }
 
-p {
-   font-family: Arial, Helvetica, sans-serif;
-}
 
 h1,
 h2,
@@ -114,6 +113,7 @@ a.emoji-links {
 iframe {
    width: 90%;
    height: 200px;
+   box-shadow: #000 3px 3px;
 }
 
 
@@ -127,6 +127,7 @@ iframe {
    text-align: left;
    background-color: rgb(7, 56, 129);
    color: #fff;
+   border-radius: 10px; 
 }
 .menu {
    display: none;
@@ -147,6 +148,18 @@ main>p:first-of-type::first-letter {
 aside.borderless {
    border: none;
 }
+header img {
+   float: top;
+  border-radius: 10px;
+   width: 100%
+                        /*För att få loggan i vänstra hörnet*/
+} 
+main img{
+   max-width: 80%;
+   margin: auto;
+   display:block;
+   border-radius: 10px;
+}
 
 @media(min-width:550px) {
    iframe {
@@ -162,6 +175,11 @@ aside.borderless {
       float: left;
       width: 600px;
       padding: 5px;
+   }
+
+   main img{
+      display:inline;
+      max-width: 350px;
    }
 
    /* burgercode start */
@@ -220,12 +238,7 @@ aside.borderless {
       padding: 5px;
    }
 
-   header img {
-      float: top;
-      /*padding-left: 50px;*/
-      width: 100%
-                           /*För att få loggan i vänstra hörnet*/
-   } 
+
 
 
    header {
