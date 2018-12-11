@@ -1,319 +1,346 @@
 /* Generella regler för både mobil och desktop. Om jag vill göra speciella saker från*/
 
 * {
-   box-sizing: border-box;
+      box-sizing: border-box;
 }
 
 body {
-   margin: 0;
-   font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
 }
 
 main,
 aside,
 .news-or {
-   padding: 10px;
+      padding: 10px;
 }
 
 .clearfix {
-   clear: both;
+      clear: both;
 }
 
 .toplink {
-   position: fixed;
-   right: 0px;
-   bottom: 25px;
-   background-color: rgb(7, 56, 129);
-   color: white;
-   padding: 5px;
-   border-radius: 5px;
-   width: 170px;
+      position: fixed;
+      right: 0px;
+      bottom: 25px;
+      background-color: rgb(7, 56, 129);
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      width: 170px;
 }
 
 .toplink a {
-   color: white;
+      color: white;
 
 }
 
 header {
-   text-align: center;
+      text-align: center;
 }
 
 /*La till i mobil för att centerar rukbrik*/
 
 
 nav a {
-   color: floralwhite;
-   font-size: 1em;
-   padding: 12px 18px 12px 1px;
+      color: floralwhite;
+      font-size: 1em;
+      padding: 12px 18px 12px 1px;
 
 }
 
 nav a:hover,
 .active {
-   background-color: #f9f9f9;
-   color: #000000;
+      background-color: #f9f9f9;
+      color: #000000;
 
 
 }
 
 nav {
-   background-color: rgb(7, 56, 129);
-   padding: 10px;
-   margin-bottom: -1px;
-   border-radius: 10px;
+      background-color: rgb(7, 56, 129);
+      padding: 10px;
+      margin-bottom: -1px;
+      border-radius: 10px;
 
 }
 
 a {
-   text-decoration: none;
+      text-decoration: none;
 }
 
 
 .infolinks nav a {
-   display: block;
+      display: block;
 }
-
 
 h1,
 h2,
-h3 {
-   font-family: 'EB Garamond', serif;
+h3,
+h4 {
+      font-family: 'PT Serif', serif;
+      color: rgb(7, 56, 129);
 }
 
 footer {
-   text-align: center;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-family: 'Courier New', Courier, monospace;
 }
 
 .form {
-   border: 1px solid rgb(7, 56, 129);
-   border-radius: 5px;
-   padding: 5px;
-   margin: 10px auto;
-   text-align: center;
-   display: block;
+      border: 1px solid rgb(7, 56, 129);
+      border-radius: 5px;
+      padding: 5px;
+      margin: 10px auto;
+      text-align: center;
+      display: block;
 }
 
 .center {
-   text-align: center;
+      text-align: center;
 }
 
 button.form-media:hover {
-   background-color: #f9f9f9;
-   color: #000;
+      background-color: #f9f9f9;
+      color: #000;
 }
 
 a.emoji-links {
-   margin-left: 10px;
+      margin-left: 10px;
 }
 
 iframe {
-   width: 90%;
-   height: 200px;
-   box-shadow: #000 3px 3px;
+      width: 90%;
+      height: 200px;
+      box-shadow: #000 3px 3px;
 }
 
 
 /* burgercode start */
-#burger{
-   display: none;
+#burger {
+      display: none;
 }
+
 #burgerlabel {
-   display: block;
-   font-size: 32px;
-   text-align: left;
-   background-color: rgb(7, 56, 129);
-   color: #fff;
-   border-radius: 10px; 
+      display: block;
+      font-size: 32px;
+      text-align: left;
+      background-color: rgb(7, 56, 129);
+      color: #fff;
+      border-radius: 10px;
 }
+
 .menu {
-   display: none;
+      display: none;
 }
-#burger:checked + .menu {
-   display: block;
-   position: absolute;
+
+#burger:checked+.menu {
+      display: block;
+      position: absolute;
 }
+
 .menu a {
-   display: block;
+      display: block;
 }
+
 /* burgercode end */
 
 main>p:first-of-type::first-letter {
-   font-size: 200%;
-   font-weight: bold;
+      font-size: 200%;
+      font-weight: bold;
+      color: rgb(7, 56, 129);
 }
+
 aside.borderless {
-   border: none;
+      border: none;
 }
+
 header img {
-   float: top;
-  border-radius: 10px;
-   width: 100%
-                        /*För att få loggan i vänstra hörnet*/
-} 
-main img{
-   max-width: 80%;
-   margin: auto;
-   display:block;
-   border-radius: 10px;
+      float: top;
+      border-radius: 10px;
+      width: 100%
+            /*För att få loggan i vänstra hörnet*/
+}
+
+main img {
+      max-width: 80%;
+      margin: auto;
+      display: block;
+      border-radius: 10px;
 }
 
 @media(min-width:550px) {
-   iframe {
-      width: 100%;
-      height: 300px;
-   }
+      iframe {
+            width: 100%;
+            height: 300px;
+      }
+        /* burgercode start */
+        #burgerlabel {
+            display: none;
+      }
+
+      .menu {
+            display: block;
+      }
+
+      .menu a {
+            display: inline;
+      }
+
+      /* burgercode end */
 }
 
 @media (min-width: 810px) {
 
-   /*Brytpunkt som är 800px eller större är för desktop, laptop osv. Allt under 800px är för plattor och mobiler */
-   main {
-      float: left;
-      width: 600px;
-      padding: 5px;
-   }
+      /*Brytpunkt som är 800px eller större är för desktop, laptop osv. Allt under 800px är för plattor och mobiler */
+      main {
+            float: left;
+            width: 600px;
+            padding: 5px;
+      }
 
-   main img{
-      display:inline;
-      max-width: 350px;
-   }
+      main img {
+            display: inline;
+            max-width: 350px;
+      }
 
-   /* burgercode start */
-   #burgerlabel{
-      display: none;
-   }
-   .menu {
-      display: block;
-   }
-   .menu a {
-      display: inline;
-   }
-   /* burgercode end */
+      /* burgercode start */
+      #burgerlabel {
+            display: none;
+      }
 
-   body {
-      background-color: #f9f9f9;
-   }
+      .menu {
+            display: block;
+      }
 
-   .toplink {
-      right: 10px;
-      bottom: 25px;
-      width: 100px;
-   }
+      .menu a {
+            display: inline;
+      }
 
-   nav a {
-      color: white;
-      font-size: 1em;
-      padding: 10px;
+      /* burgercode end */
 
-   }
+      body {
+            background-color: #f9f9f9;
+      }
 
-   nav a:hover,
-   .active {
-      background-color: #f9f9f9;
-      color: #000000;
+      .toplink {
+            right: 10px;
+            bottom: 25px;
+            width: 100px;
+      }
 
-   }
+      nav a {
+            color: white;
+            font-size: 1em;
+            padding: 10px;
+
+      }
+
+      nav a:hover,
+      .active {
+            background-color: #f9f9f9;
+            color: #000000;
+
+      }
 
 
-   aside {
-      float: right;
-      width: 200px;
-      padding: 5px;
-   }
-
-   .container {
-      width: 810px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 0;
-      padding: 5px;
-   }
-
-   .contentimg {
-      float: right;
-      padding: 5px;
-   }
-
-   header {
-      margin-bottom: 0;
-      padding-bottom: 0;
-      padding-left: 20px;
-      padding-right: 20px;
-   }
-
-   .form-media {
-      width: 50%;
-      height: auto;
-   }
-
-   iframe {
-      width: 500px;
-      height: 280px;
-   }
-
-   @supports (display: grid) {
-
-      main,
       aside {
-         clear: both;
-         padding: 5px;
+            float: right;
+            width: 200px;
+            padding: 5px;
       }
 
       .container {
-         display: grid;
-         width: 80%;
-         padding: 5px;
-         grid-template-columns: auto 200px;
-         grid-template-areas:
-            "header header"
-            " main infolinks"
-            " main news";
+            width: 810px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            padding: 5px;
+      }
+
+      .contentimg {
+            float: right;
+            padding: 5px;
       }
 
       header {
-         width: 100%;
-         grid-area: header;
-         background-color: #f9f9f9;
-         padding: 0px;
-         text-align: center;
-         padding-bottom: 0;
-         margin-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            padding-left: 20px;
+            padding-right: 20px;
       }
 
-      main {
-         width: 100%;
-         grid-area: main;
-         background-color: #f9f9f9;
-         padding: 5px;
+      .form-media {
+            width: 50%;
+            height: auto;
       }
 
-      aside.infolinks {
-         width: 100%;
-         grid-area: infolinks;
-         background-color: #f9f9f9;
-         padding: 5px;
-         border-left: 5px ridge #99c;
+      iframe {
+            width: 500px;
+            height: 280px;
+      }
+
+      @supports (display: grid) {
+
+            main,
+            aside {
+                  clear: both;
+                  padding: 5px;
+            }
+
+            .container {
+                  display: grid;
+                  width: 80%;
+                  padding: 5px;
+                  grid-template-columns: auto 200px;
+                  grid-template-areas:
+                        "header header"
+                        " main infolinks"
+                        " main news";
+            }
+
+            header {
+                  width: 100%;
+                  grid-area: header;
+                  background-color: #f9f9f9;
+                  padding: 0px;
+                  text-align: center;
+                  padding-bottom: 0;
+                  margin-bottom: 0;
+            }
+
+            main {
+                  width: 100%;
+                  grid-area: main;
+                  background-color: #f9f9f9;
+                  padding: 5px;
+            }
+
+            aside.infolinks {
+                  width: 100%;
+                  grid-area: infolinks;
+                  background-color: #f9f9f9;
+                  padding: 5px;
+                  border-left: 5px ridge #99c;
+            }
+
+
+            .news-or {
+                  width: 100%;
+                  grid-row: 2/4;
+                  /*grid-area:news; */
+                  background-color: #f9f9f9;
+                  border-left: 5px ridge rgb(7, 56, 129);
+                  padding: 5px;
+                  margin-top: -1;
+            }
       }
 
 
-      .news-or {
-         width: 100%;
-         grid-row: 2/4;
-         /*grid-area:news; */
-         background-color: #f9f9f9;
-         border-left: 5px ridge rgb(7, 56, 129);
-         padding: 5px;
-         margin-top: -1;
-      }
-   }
-
-   
 }
 
-   /*TODO: fixa floaten   */
+/*TODO: fixa floaten   */
 
-   /*Vi tog bort aside news i hem och kontakt i html och skapa en ny klass för news och tilldela en annan storlek, grid-row 2/4*/
+/*Vi tog bort aside news i hem och kontakt i html och skapa en ny klass för news och tilldela en annan storlek, grid-row 2/4*/
