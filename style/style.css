@@ -283,7 +283,6 @@ main img {
       }
 
       @supports (display: grid) {
-
             main,
             aside {
                   clear: both;
@@ -297,8 +296,7 @@ main img {
                   grid-template-columns: auto 200px;
                   grid-template-areas:
                         "header header"
-                        " main infolinks"
-                        " main news";
+                        " main news-or";
             }
 
             header {
@@ -317,15 +315,6 @@ main img {
                   background-color: #f9f9f9;
                   padding: 5px;
             }
-
-            aside.infolinks {
-                  width: 100%;
-                  grid-area: infolinks;
-                  background-color: #f9f9f9;
-                  padding: 5px;
-                  border-left: 5px ridge #99c;
-            }
-
 
             .news-or {
                   width: 100%;
