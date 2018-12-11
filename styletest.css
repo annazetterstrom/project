@@ -275,8 +275,6 @@ main img{
             "header header"
             " main infolinks"
             " main news";
-
-
       }
 
       header {
@@ -304,13 +302,6 @@ main img{
          border-left: 5px ridge #99c;
       }
 
-      /*aside.news {
-         width: 100%;
-         grid-area: news;
-         background-color:#f9f9f9;
-         border-left: 5px ridge #99c;
-         padding: 5px;
-      }*/
 
       .news-or {
          width: 100%;
