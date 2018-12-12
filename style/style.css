@@ -150,7 +150,6 @@ header img {
 main img {
       max-width: 80%;
       margin: auto;
-      display: block;
       border-radius: 10px;
 }
 
@@ -238,13 +237,11 @@ main img {
             main,
             aside {
                   clear: both;
-                  padding: 5px;
             }
 
             .container {
                   display: grid;
                   width: 80%;
-                  padding: 5px;
                   grid-template-columns: auto 200px;
                   grid-template-areas:
                         "header header"
@@ -254,29 +251,20 @@ main img {
             header {
                   width: 100%;
                   grid-area: header;
-                  background-color: #f9f9f9;
                   padding: 0px;
-                  text-align: center;
-                  padding-bottom: 0;
-                  margin-bottom: 0;
             }
 
             main {
                   width: 100%;
                   grid-area: main;
-                  background-color: #f9f9f9;
-                  padding: 5px;
             }
 
             .news-or {
                   width: 100%;
                   grid-area: news-or;
-                  background-color: #f9f9f9;
                   border-left: 5px ridge rgb(7, 56, 129);
                   padding: 5px;
                   margin-top: -1;
             }
       }
-
-
 }
