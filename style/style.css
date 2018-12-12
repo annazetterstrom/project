@@ -264,7 +264,7 @@ main img {
                   grid-area: news-or;
                   border-left: 5px ridge rgb(7, 56, 129);
                   padding: 5px;
-                  margin-top: -1;
+                  margin-top: -1px;
             }
       }
 }
