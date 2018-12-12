@@ -24,7 +24,6 @@ aside,
       right: 0px;
       bottom: 25px;
       background-color: rgb(7, 56, 129);
-      color: white;
       padding: 5px;
       border-radius: 5px;
       width: 170px;
@@ -32,7 +31,6 @@ aside,
 
 .toplink a {
       color: white;
-
 }
 
 header {
@@ -41,9 +39,8 @@ header {
 
 /*La till i mobil för att centerar rukbrik*/
 
-
 nav a {
-      color: floralwhite;
+      color: white;
       font-size: 1em;
       padding: 12px 18px 12px 1px;
 
@@ -53,8 +50,6 @@ nav a:hover,
 .active {
       background-color: #f9f9f9;
       color: #000000;
-
-
 }
 
 nav {
@@ -62,16 +57,10 @@ nav {
       padding: 10px;
       margin-bottom: -1px;
       border-radius: 10px;
-
 }
 
 a {
       text-decoration: none;
-}
-
-
-.infolinks nav a {
-      display: block;
 }
 
 h1,
@@ -98,10 +87,6 @@ footer {
       display: block;
 }
 
-.center {
-      text-align: center;
-}
-
 button.form-media:hover {
       background-color: #f9f9f9;
       color: #000;
@@ -114,7 +99,6 @@ a.emoji-links {
 iframe {
       width: 90%;
       height: 200px;
-      box-shadow: #000 3px 3px;
 }
 
 
@@ -161,7 +145,6 @@ header img {
       float: top;
       border-radius: 10px;
       width: 100%
-            /*För att få loggan i vänstra hörnet*/
 }
 
 main img {
@@ -206,45 +189,14 @@ main img {
             max-width: 350px;
       }
 
-      /* burgercode start */
-      #burgerlabel {
-            display: none;
-      }
-
-      .menu {
-            display: block;
-      }
-
-      .menu a {
-            display: inline;
-      }
-
-      /* burgercode end */
-
       body {
             background-color: #f9f9f9;
       }
 
       .toplink {
             right: 10px;
-            bottom: 25px;
             width: 100px;
       }
-
-      nav a {
-            color: white;
-            font-size: 1em;
-            padding: 10px;
-
-      }
-
-      nav a:hover,
-      .active {
-            background-color: #f9f9f9;
-            color: #000000;
-
-      }
-
 
       aside {
             float: right;
@@ -318,8 +270,7 @@ main img {
 
             .news-or {
                   width: 100%;
-                  grid-row: 2/4;
-                  /*grid-area:news; */
+                  grid-area:news-or;
                   background-color: #f9f9f9;
                   border-left: 5px ridge rgb(7, 56, 129);
                   padding: 5px;
@@ -329,7 +280,3 @@ main img {
 
 
 }
-
-/*TODO: fixa floaten   */
-
-/*Vi tog bort aside news i hem och kontakt i html och skapa en ny klass för news och tilldela en annan storlek, grid-row 2/4*/
