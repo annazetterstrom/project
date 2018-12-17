@@ -240,8 +240,8 @@ main img {
             }
 
             .container {
+                  width: 100%;
                   display: grid;
-                  width: 80%;
                   grid-template-columns: auto 200px;
                   grid-template-areas:
                         "header header"
@@ -265,6 +265,11 @@ main img {
                   border-left: 5px ridge rgb(7, 56, 129);
                   padding: 5px;
                   margin-top: -1px;
+            }
+            @media (min-width:900px){
+                  .container {
+                        width: 80%;
+                  }
             }
       }
 }
